@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .box { rx: 10px; ry: 10px; stroke-width: 1.5; }
+    .box-title { font-family: 'Inter', system-ui, sans-serif; font-size: 13px; font-weight: 600; fill: #f8fafc; }
+    .box-sub { font-family: 'Inter', system-ui, sans-serif; font-size: 11px; fill: #94a3b8; }
+    .badge-text { font-family: 'Inter', system-ui, sans-serif; font-size: 9px; font-weight: 700; fill: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px; }
+    .line { stroke: #334155; stroke-width: 1.5; stroke-dasharray: 4 4; }
+    .line-active { stroke: url(#accentGrad); stroke-width: 2; }
+    .badge-bg { rx: 4px; ry: 4px; fill: rgba(56, 189, 248, 0.12); }
+  </style>
+
+  <!-- Background grid pattern -->
+  <rect width="800" height="420" rx="16" fill="#0b1120" />
+  <g opacity="0.15">
+    <path d="M0 60 H800 M0 120 H800 M0 180 H800 M0 240 H800 M0 300 H800 M0 360 H800" stroke="#38bdf8" stroke-width="0.5" />
+    <path d="M100 0 V420 M200 0 V420 M300 0 V420 M400 0 V420 M500 0 V420 M600 0 V420 M700 0 V420" stroke="#38bdf8" stroke-width="0.5" />
+  </g>
+
+  <!-- Header bar inside SVG -->
+  <text x="40" y="42" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc" letter-spacing="0.5">
+    GRAND EGYPTIAN MUSEUM AR EXPERIENCE — CONCEPTUAL SYSTEM ARCHITECTURE
+  </text>
+  <text x="40" y="62" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#64748b">
+    System Analysis, Scope Definition, User Needs &amp; Database Mapping Model
+  </text>
+
+  <!-- Flow connectors -->
+  <!-- 1 to 2 -->
+  <path d="M210 160 L270 160" class="line-active" />
+  <polygon points="270,160 262,156 262,164" fill="#38bdf8" />
+
+  <!-- 2 to 3 -->
+  <path d="M450 160 L510 160" class="line-active" />
+  <polygon points="510,160 502,156 502,164" fill="#818cf8" />
+
+  <!-- 2 down to Database -->
+  <path d="M360 220 L360 270" class="line" stroke-dasharray="3 3" />
+  <polygon points="360,270 356,262 364,262" fill="#94a3b8" />
+
+  <!-- 3 down to Multilingual -->
+  <path d="M600 220 L600 270" class="line" stroke-dasharray="3 3" />
+  <polygon points="600,270 596,262 604,262" fill="#94a3b8" />
+
+  <!-- NODE 1: User / Smart Glasses Layer -->
+  <g transform="translate(30, 100)">
+    <rect width="180" height="120" class="box" fill="url(#cardGrad)" stroke="#334155" />
+    <rect x="12" y="14" width="76" height="18" class="badge-bg" />
+    <text x="18" y="27" class="badge-text">User Layer</text>
+    <text x="14" y="54" class="box-title">Smart Glasses</text>
+    <text x="14" y="70" class="box-sub">Visitor Interaction Concept</text>
+    <text x="14" y="92" class="box-sub">• Multilingual choice</text>
+    <text x="14" y="106" class="box-sub">• Field-of-view sensing</text>
+  </g>
+
+  <!-- NODE 2: System Scope & Navigation Logic (Maher's Focus) -->
+  <g transform="translate(270, 100)">
+    <rect width="180" height="120" class="box" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.8" filter="url(#glow)" opacity="0.2" />
+    <rect width="180" height="120" class="box" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.8" />
+    <rect x="12" y="14" width="105" height="18" rx="4" ry="4" fill="rgba(56, 189, 248, 0.2)" />
+    <text x="18" y="27" class="badge-text" fill="#38bdf8">Analysis Focus</text>
+    <text x="14" y="54" class="box-title">Navigation &amp; Scope</text>
+    <text x="14" y="70" class="box-sub">Requirements &amp; System Scope</text>
+    <text x="14" y="92" class="box-sub">• Visitor path routing</text>
+    <text x="14" y="106" class="box-sub">• System boundary analysis</text>
+  </g>
+
+  <!-- NODE 3: 3D Artifact Presentation Concept -->
+  <g transform="translate(510, 100)">
+    <rect width="180" height="120" class="box" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.5" />
+    <rect x="12" y="14" width="80" height="18" class="badge-bg" fill="rgba(129, 140, 248, 0.15)" />
+    <text x="18" y="27" class="badge-text" fill="#818cf8">AR Module</text>
+    <text x="14" y="54" class="box-title">3D Presentation</text>
+    <text x="14" y="70" class="box-sub">Storytelling Concept</text>
+    <text x="14" y="92" class="box-sub">• Holographic artifact view</text>
+    <text x="14" y="106" class="box-sub">• Historical context reveal</text>
+  </g>
+
+  <!-- NODE 4: ERD & Database Model (Maher's Contribution) -->
+  <g transform="translate(270, 270)">
+    <rect width="180" height="110" class="box" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.5" />
+    <rect x="12" y="14" width="120" height="18" rx="4" ry="4" fill="rgba(245, 158, 11, 0.15)" />
+    <text x="18" y="27" class="badge-text" fill="#f59e0b">Maher's Contribution</text>
+    <text x="14" y="52" class="box-title">ERD &amp; Data Mapping</text>
+    <text x="14" y="68" class="box-sub">Relational Schema Design</text>
+    <text x="14" y="88" class="box-sub">• Artifact &amp; Hall Entities</text>
+    <text x="14" y="102" class="box-sub">• Language &amp; Route tables</text>
+  </g>
+
+  <!-- NODE 5: Multilingual Voice & Narrative -->
+  <g transform="translate(510, 270)">
+    <rect width="180" height="110" class="box" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+    <rect x="12" y="14" width="80" height="18" class="badge-bg" />
+    <text x="18" y="27" class="badge-text">Localization</text>
+    <text x="14" y="52" class="box-title">Multi-Language</text>
+    <text x="14" y="68" class="box-sub">Visitor Accessibility</text>
+    <text x="14" y="88" class="box-sub">• Audio narrative stream</text>
+    <text x="14" y="102" class="box-sub">• Cultural storytelling</text>
+  </g>
+
+  <!-- Survey & Requirements pill at bottom left -->
+  <g transform="translate(30, 270)">
+    <rect width="180" height="110" class="box" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+    <rect x="12" y="14" width="112" height="18" class="badge-bg" fill="rgba(56, 189, 248, 0.12)" />
+    <text x="18" y="27" class="badge-text" fill="#38bdf8">Research Phase</text>
+    <text x="14" y="52" class="box-title">User Needs Survey</text>
+    <text x="14" y="68" class="box-sub">Field Research &amp; Inputs</text>
+    <text x="14" y="88" class="box-sub">• Peer survey design</text>
+    <text x="14" y="102" class="box-sub">• Feature prioritization</text>
+  </g>
+</svg>
