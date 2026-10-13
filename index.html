@@ -373,4 +373,288 @@ html[dir="rtl"] .step h3{font-family:"Cairo",sans-serif}
           <div class="code-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span>Program.cs</span></div>
 <pre class="code"><span class="k">var</span> app = builder.Build();
 
-app.<span class="t">MapGet</span>(<s
+app.<span class="t">MapGet</span>(<span class="s">"/products"</span>,
+  <span class="k">async</span> (AppDbContext db) =&gt;
+    <span class="k">await</span> db.Products
+      .<span class="t">ToListAsync</span>());
+
+app.<span class="t">Run</span>();</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="card">
+          <p class="fact-title" data-ar="جامعة بنها">Benha University</p>
+          <p class="fact-sub" data-ar="علوم الحاسب والذكاء الاصطناعي، التخرج 2028">Computer Science &amp; AI, graduating 2028</p>
+        </div>
+        <div class="card">
+          <p class="fact-title" data-ar="مسار .NET في DEPI">DEPI .NET track</p>
+          <p class="fact-sub" data-ar="تدريب Full-Stack مكتمل">Full-stack training, completed</p>
+        </div>
+        <div class="card">
+          <p class="fact-title" data-ar="مبادرة رواد">Rowad Initiative</p>
+          <p class="fact-sub" data-ar="تدريب جارٍ حاليًا">Training in progress</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-copy">
+          <h2 class="h2" data-ar="أفهم أولًا، ثم أبني">Understand first, then build</h2>
+          <p style="margin-top:1.4rem" data-ar="أنا طالب في السنة الثالثة بكلية الحاسبات والمعلومات (قسم الذكاء الاصطناعي) بجامعة بنها، وأتدرّب لأصبح مطوّر Full-Stack على منصة .NET. أحب أن أحوّل فكرة غير واضحة إلى متطلبات محددة، وقاعدة بيانات منظمة، وتطبيق يعمل.">I'm a third-year Computer Science and Information student (AI department) at Benha University, training to become a full-stack .NET developer. I like turning a vague idea into clear requirements, a clean database and a working application.</p>
+          <p data-ar="ما زلت في بداية الطريق وأبني معرض أعمالي، وما أقدّمه هو التزام وتواصل صريح وعادة السؤال قبل كتابة الكود. وعملي السابق في مجال البيع بالتجزئة علّمني أن أنصت للعميل وأحل طلبه الحقيقي.">I'm early in my career and still building my project portfolio. What I offer is steady work, honest communication and a habit of asking questions before writing code. My earlier job in retail taught me to listen to the customer and solve the real request.</p>
+        </div>
+        <div>
+          <h2 class="h2" style="font-size:clamp(1.8rem,4vw,2.6rem)" data-ar="ما أستطيع بناءه">What I can build</h2>
+          <div class="cap-grid" style="margin-top:1.4rem">
+            <article class="card">
+              <div class="ico"><svg viewBox="0 0 24 24"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg></div>
+              <h3 data-ar="واجهات REST API">REST Web APIs</h3>
+              <p data-ar="واجهات ASP.NET Core بنقاط واضحة وتحقق من البيانات وتوثيق عبر Swagger.">ASP.NET Core APIs with clear endpoints, validation and Swagger documentation.</p>
+            </article>
+            <article class="card">
+              <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg></div>
+              <h3 data-ar="مواقع MVC">MVC web apps</h3>
+              <p data-ar="مواقع ويب بـ ASP.NET Core MVC وصفحات Razor متجاوبة مع كل الشاشات.">Websites with ASP.NET Core MVC, Razor views and pages that adapt to any screen.</p>
+            </article>
+            <article class="card">
+              <div class="ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+              <h3 data-ar="قواعد بيانات SQL Server">SQL Server databases</h3>
+              <p data-ar="جداول وعلاقات واستعلامات مصممة من مخطط ERD ومُطبَّعة بشكل سليم.">Tables, relationships and queries designed from an ERD and normalized properly.</p>
+            </article>
+            <article class="card">
+              <div class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></div>
+              <h3 data-ar="تسجيل الدخول والصلاحيات">Login and roles</h3>
+              <p data-ar="مصادقة وتفويض حتى يرى كل مستخدم ما يخصه فقط.">Authentication and authorization so each user sees only what they should.</p>
+            </article>
+            <article class="card">
+              <div class="ico"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></div>
+              <h3 data-ar="متطلبات ومخططات">Requirements and diagrams</h3>
+              <p data-ar="وثائق متطلبات ومخططات ERD وتحديد للنطاق قبل كتابة أي كود.">Requirements documents, ERDs and a defined scope before any code is written.</p>
+            </article>
+            <article class="card">
+              <div class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="14" height="11" rx="1.5"/><rect x="14" y="9" width="8" height="12" rx="1.5"/></svg></div>
+              <h3 data-ar="واجهة متجاوبة">Responsive front end</h3>
+              <p data-ar="صفحات HTML وCSS وJavaScript تعمل جيدًا على الهاتف والكمبيوتر.">HTML, CSS and JavaScript pages that work well on phones and desktops.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h2" data-ar="المهارات">Skills</h2>
+        <p class="sub" data-ar="الأدوات التي درستها وتدرّبت عليها في مسار Full-Stack .NET.">The tools I studied and practiced in my full-stack .NET training.</p>
+      </div>
+      <div class="skill-grid">
+        <article class="card">
+          <h3 data-ar="الواجهة الخلفية">Back end</h3>
+          <ul class="chips">
+            <li>C#</li><li>ASP.NET Core MVC</li><li>Web API</li><li>REST</li><li>Dependency Injection</li><li>LINQ</li><li>Authentication &amp; Authorization</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 data-ar="البيانات">Data</h3>
+          <ul class="chips">
+            <li>SQL Server</li><li>Entity Framework Core</li><li>ERD</li><li>Normalization</li><li>Joins &amp; Subqueries</li><li>Stored Procedures</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 data-ar="الواجهة الأمامية والأدوات">Front end and tools</h3>
+          <ul class="chips">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git &amp; GitHub</li><li>Postman</li><li>Swagger</li><li>Visual Studio</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section class="section" id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h2" data-ar="كيف أعمل">How I work</h2>
+        <p class="sub" data-ar="ثلاث خطوات بهذا الترتيب.">Three steps, in this order.</p>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <h3 data-ar="أوضّح المتطلبات">Clarify</h3>
+          <p data-ar="نتفق على المشكلة والمستخدمين وما يدخل في النطاق وما لا يدخل، وأكتبه حتى لا يُترك شيء للافتراض.">We agree on the problem, the users and what is in and out of scope. I write it down so nothing is left to assumption.</p>
+          <span class="step-n" aria-hidden="true">01</span>
+        </article>
+        <article class="step">
+          <h3 data-ar="أصمّم">Design</h3>
+          <p data-ar="أرسم البيانات في مخطط ERD وأخطط نقاط الـ API والصفحات، وأعرضها عليك لتعطي رأيك.">I model the data as an ERD, plan the endpoints and pages, and share them with you for feedback.</p>
+          <span class="step-n" aria-hidden="true">02</span>
+        </article>
+        <article class="step">
+          <h3 data-ar="أبني وأسلّم">Build and hand over</h3>
+          <p data-ar="أبني بـ ASP.NET Core وEF Core، وأختبر النقاط عبر Postman، وأسلّم الكود على GitHub.">I build with ASP.NET Core and EF Core, test endpoints with Postman, and deliver the code on GitHub.</p>
+          <span class="step-n" aria-hidden="true">03</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h2" data-ar="المشاريع">Projects</h2>
+        <p class="sub" data-ar="أنا في بداية الطريق، لذلك يعرض هذا القسم أعمال التحليل والتصميم التي أنجزتها، وما أبنيه الآن.">I'm at the start of my career, so this section shows the analysis and design work I've done and what I'm building now.</p>
+      </div>
+      <div class="proj-grid">
+        <article class="card proj">
+          <span class="badge" data-ar="تحليل نظم">System analysis</span>
+          <h3 data-ar="توافر: شبكة الصيدليات وتوافر الأدوية">Tawafar: medicine availability and pharmacy network</h3>
+          <p data-ar="نظام ويب يربط المستخدمين بالصيدليات بتوافر دواء قائم على الثقة. وثيقة متطلبات أعمال تغطي 20 ميزة، لكل منها الغرض والأطراف والتدفق والقواعد والحالات الاستثنائية والأولوية.">A web system that connects people to pharmacies through trust-based medicine availability. A business requirements document covering 20 features, each with purpose, actors, main flow, rules, edge cases and priority.</p>
+          <dl class="rows">
+            <div class="row"><dt data-ar="النوع">Type</dt><dd data-ar="وثيقة متطلبات أعمال (BRD)">Business requirements document</dd></div>
+            <div class="row"><dt data-ar="النطاق">Scope</dt><dd data-ar="20 ميزة، 39 صفحة">20 features, 39 pages</dd></div>
+            <div class="row"><dt data-ar="الحالة">Status</dt><dd data-ar="مكتملة">Completed</dd></div>
+          </dl>
+        </article>
+
+        <article class="card proj">
+          <span class="badge" data-ar="مشروع جامعي">University project</span>
+          <h3 data-ar="تجربة الواقع المعزز في المتحف المصري الكبير">Grand Egyptian Museum AR experience</h3>
+          <p data-ar="تصور لتجربة زيارة بنظارات ذكية: مجسمات ثلاثية الأبعاد للقطع وسرد تاريخي بلغة الزائر وتوجيه بين القاعات. عملي كان على التحليل وقاعدة البيانات، وليس على بناء النظام.">A concept for a smart-glasses museum visit: 3D artifacts, historical storytelling in the visitor's language and guidance between halls. My work was the analysis and the database, not building the system.</p>
+          <dl class="rows">
+            <div class="row"><dt data-ar="النوع">Type</dt><dd data-ar="تحليل وتصميم نظم">System analysis and design</dd></div>
+            <div class="row"><dt data-ar="دوري">My part</dt><dd data-ar="النطاق، الاستبيان، ERD، العرض">Scope, survey, ERD, presentation</dd></div>
+            <div class="row"><dt data-ar="الأدوات">Tools</dt><dd>ERD, Canva</dd></div>
+          </dl>
+        </article>
+
+        <article class="card proj proj-draft">
+          <span class="badge" data-ar="قيد العمل">In progress</span>
+          <h3 data-ar="مشروع ASP.NET Core Web API">ASP.NET Core Web API project</h3>
+          <p data-ar="أول مشروع برمجي كامل لي: واجهة API مع EF Core وSQL Server. سأنشر الكود على GitHub فور أن يصبح جاهزًا للعرض.">My first full coded project: an API with EF Core and SQL Server. I'll publish the code on GitHub as soon as it's ready to show.</p>
+          <dl class="rows">
+            <div class="row"><dt data-ar="النوع">Type</dt><dd>Web API</dd></div>
+            <div class="row"><dt data-ar="التقنيات">Stack</dt><dd>ASP.NET Core, EF Core, SQL Server</dd></div>
+            <div class="row"><dt data-ar="الحالة">Status</dt><dd data-ar="قيد العمل">In progress</dd></div>
+          </dl>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Maher-khaled1" target="_blank" rel="noopener" data-ar="تابع GitHub">Follow on GitHub</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= JOURNEY ================= -->
+  <section class="section" id="journey">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h2" data-ar="التعليم والتدريب">Education and training</h2>
+      </div>
+      <div class="journey">
+        <article class="card">
+          <h3 data-ar="جامعة بنها">Benha University</h3>
+          <p data-ar="بكالوريوس الحاسبات والمعلومات، قسم الذكاء الاصطناعي. مقررات: البرمجة كائنية التوجه، هياكل البيانات، الخوارزميات، قواعد البيانات، تحليل وتصميم النظم.">Bachelor of Computer Science and Information, AI department. Courses include OOP, data structures, algorithms, database systems, and system analysis and design.</p>
+          <p class="when" data-ar="السنة الثالثة، التخرج المتوقع 2028">Third year, expected graduation 2028</p>
+        </article>
+        <article class="card">
+          <h3 data-ar="مبادرة رواد مصر الرقمية (DEPI)">Digital Egypt Pioneers Initiative (DEPI)</h3>
+          <p data-ar="مسار Full-Stack .NET: ASP.NET Core MVC وWeb API وEF Core وSQL Server والمصادقة وحقن الاعتماديات.">Full-Stack .NET track: ASP.NET Core MVC, Web API, EF Core, SQL Server, authentication and dependency injection.</p>
+          <p class="when" data-ar="مكتمل">Completed</p>
+        </article>
+        <article class="card">
+          <h3 data-ar="مبادرة رواد">Rowad Initiative</h3>
+          <p data-ar="تدريب إضافي لتطوير مهاراتي المهنية وتعميق خبرتي في التطوير.">Further training to strengthen my professional skills and deepen my development experience.</p>
+          <p class="when" data-ar="جارٍ حاليًا">In progress</p>
+        </article>
+      </div>
+
+      <div class="retail">
+        <h3 class="h2" style="font-size:clamp(1.7rem,3.6vw,2.4rem)" data-ar="قبل البرمجة: مندوب مبيعات">Before code: sales associate</h3>
+        <p style="color:var(--muted);max-width:38rem" data-ar="عملت في سوبر ماركت وتعاملت يوميًا مع العملاء والموردين وتحت ضغط. تعلمت الإنصات وحل الطلب الحقيقي بهدوء، وهذا ما أحمله إلى العمل مع العملاء اليوم.">I worked in a supermarket, dealing daily with customers and suppliers under pressure. I learned to listen and calmly solve the actual request, and I bring that to client work today.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <h2 class="h2" data-ar="عندك موقع أو API تريد بناءه؟">Have a website or API to build?</h2>
+        <p class="sub" data-ar="أنا متاح لمشاريع العمل الحر ولوظائف مطوّر .NET المبتدئ. أرسل لي وصفًا مختصرًا لما تحتاجه وسأرد عليك بأسئلة وخطة مبدئية.">I'm open to freelance projects and junior full-stack .NET roles. Send me a short description of what you need and I'll reply with questions and a rough plan.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:mk6150262@gmail.com" data-ar="أرسل بريدًا">Send an email</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/maher-khaled1" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/Maher-khaled1" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="mail"><a href="mailto:mk6150262@gmail.com">mk6150262@gmail.com</a><button class="copy" id="copy" type="button" data-ar="نسخ">Copy</button></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>&copy; 2026 <span data-ar="ماهر خالد">Maher Khaled</span></span>
+    <span data-ar="القاهرة، مصر">Cairo, Egypt</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-ar]'));
+  nodes.forEach(function (n) { n.setAttribute('data-en', n.innerHTML.trim()); });
+
+  var langBtn = document.getElementById('lang');
+  var copyBtn = document.getElementById('copy');
+
+  function setLang(l) {
+    root.lang = l;
+    root.dir = l === 'ar' ? 'rtl' : 'ltr';
+    nodes.forEach(function (n) {
+      var v = n.getAttribute(l === 'ar' ? 'data-ar' : 'data-en');
+      if (l === 'ar') { n.textContent = v; } else { n.innerHTML = v; }
+    });
+    langBtn.textContent = l === 'ar' ? 'English' : 'العربية';
+    langBtn.setAttribute('lang', l === 'ar' ? 'en' : 'ar');
+    document.title = l === 'ar' ? 'ماهر خالد | مطوّر Full-Stack .NET' : 'Maher Khaled | Full-Stack .NET Developer';
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  if (saved === 'ar') { setLang('ar'); }
+  langBtn.addEventListener('click', function () { setLang(root.lang === 'ar' ? 'en' : 'ar'); });
+
+  /* mobile menu */
+  var menuBtn = document.getElementById('menu-btn');
+  var menu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', function () {
+    var open = menu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') { menu.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }
+  });
+
+  /* copy email */
+  copyBtn.addEventListener('click', function () {
+    var done = function () {
+      var ar = root.lang === 'ar';
+      copyBtn.textContent = ar ? 'تم النسخ' : 'Copied';
+      setTimeout(function () { copyBtn.textContent = ar ? 'نسخ' : 'Copy'; }, 1600);
+    };
+    try {
+      navigator.clipboard.writeText('mk6150262@gmail.com').then(done, function () {});
+    } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
